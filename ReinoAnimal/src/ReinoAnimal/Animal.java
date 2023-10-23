@@ -48,7 +48,7 @@ public class Animal {
 	 * 
 	 * Método que adiciona +1 ao contador
 	 * */
-	private void contarPri() {
+	public void contarPri() {
 		contador++;
 	}
 	/** 
@@ -57,6 +57,30 @@ public class Animal {
 	 * */
 	public void RevelarContador() {
 		System.out.println("A quantidade de Animais é:" + contador);
+	}
+	public String getEspecie() {
+		return especie;
+	}
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+	public String getSexo() {
+		return sexo;
+	}
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+	public String getNascimento() {
+		return nascimento;
+	}
+	public void setNascimento(String nascimento) {
+		this.nascimento = nascimento;
+	}
+	public double getContador() {
+		return contador;
+	}
+	public void setContador(double contador) {
+		this.contador = contador;
 	}
 	
 }
