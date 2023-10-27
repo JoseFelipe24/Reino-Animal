@@ -11,20 +11,20 @@ public class Animal {
 
 	public String especie;
 	public String sexo;
-	public String nascimento;
-	public double contador;
+	public double nascimento;
+	
+	static int contador=0;;
 	
 	/** 
 	 * 
 	 * Construtor que cria um animal
-	 * @param especie, sexo,nascimento e contador sao parametros do metodo
+	 * @param especie, sexo e nascimento sao parametros do metodo
 	 * */
-	public Animal(String especie, String sexo, String nascimento, double contador) {
+	public Animal(String especie, String sexo, double nascimento) {
 		super();
 		this.especie = especie;
 		this.sexo = sexo;
 		this.nascimento = nascimento;
-		this.contador = contador;
 		contarPri();
 	}
 	/** 
@@ -48,16 +48,21 @@ public class Animal {
 	 * 
 	 * Método que adiciona +1 ao contador
 	 * */
-	public void contarPri() {
+	private void contarPri() {
 		contador++;
 	}
 	/** 
 	 * 
 	 * Método que imprimi a quantidade de animais
 	 * */
-	public void RevelarContador() {
+	public static void  RevelarContador() {
+		
 		System.out.println("A quantidade de Animais é:" + contador);
 	}
+	/** 
+	 * 
+	 * Métodos getter e setter que imprimem e salvam as informações do animal
+	 * */
 	public String getEspecie() {
 		return especie;
 	}
@@ -70,17 +75,11 @@ public class Animal {
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	public String getNascimento() {
+	public double getNascimento() {
 		return nascimento;
 	}
-	public void setNascimento(String nascimento) {
+	public void setNascimento(double nascimento) {
 		this.nascimento = nascimento;
-	}
-	public double getContador() {
-		return contador;
-	}
-	public void setContador(double contador) {
-		this.contador = contador;
 	}
 	
 }
