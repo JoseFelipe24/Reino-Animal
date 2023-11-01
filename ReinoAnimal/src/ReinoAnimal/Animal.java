@@ -9,9 +9,9 @@ package ReinoAnimal;
 
 public class Animal {
 
-	public String especie;
-	public String sexo;
-	public double nascimento;
+	private String especie;
+	private String sexo;
+	private double nascimento;
 	
 	static int contador=0;;
 	

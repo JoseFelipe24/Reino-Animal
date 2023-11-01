@@ -7,8 +7,8 @@ package ReinoAnimal;
  * */
 public class Terrestre extends Animal {
 
-	public String habitat;
-	public boolean pelagem;
+	private String habitat;
+	private boolean pelagem;
 	/** 
 	 * 
 	 * Construtor que cria um animal Terrestre
@@ -41,9 +41,9 @@ public class Terrestre extends Animal {
 	 * */
 	@Override
 	public void perfil() {
-		System.out.println("Especie do Animal" + especie);
-		System.out.println("Sexo do Animal" + sexo);
-		System.out.println("Nascimento do Animal" + nascimento);
+		System.out.println("Especie do Animal" + getEspecie());
+		System.out.println("Sexo do Animal" + getSexo());
+		System.out.println("Nascimento do Animal" + getNascimento());
 		System.out.println("Habitat do animal terrestre" + habitat);
 		System.out.println("é"+ pelagem + "que o animal tem pelagem");
 	}

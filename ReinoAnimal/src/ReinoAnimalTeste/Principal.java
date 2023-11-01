@@ -12,9 +12,11 @@ import ReinoAnimal.Animal;
  * */
 public class Principal {
 public static void main(String[] args) {
-	
-    Animal an1 = new Animal("louquinho", "machao", 5);
-    
+
+	/** 
+	 * criação dos objetos de tiopo Aquatico, Terrestre e Aerio.
+	 * 
+	 * */
 	Aquatico aqua1= new Aquatico("Carcharias taurus", "Femea", 7, "Salgada", false);
 	Aquatico aqua2= new Aquatico("Pygocentrus natterer", "Macho", 3, "água doce", true);
 	
@@ -26,6 +28,7 @@ public static void main(String[] args) {
 ar2.comer();
 ar1.perfil();
 
-an1.RevelarContador();
+terr1.RevelarContador();
+
 }
 }

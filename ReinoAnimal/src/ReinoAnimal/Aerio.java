@@ -8,7 +8,7 @@ package ReinoAnimal;
 public class Aerio extends Animal {
 
 
-public double altitude;
+private double altitude;
 /** 
  * 
  * Construtor que cria um animal Aerio
@@ -46,9 +46,9 @@ public void comer() {
 
 @Override
 public void perfil() {
-	System.out.println("Especie do Animal" + especie);
-	System.out.println("Sexo do Animal" + sexo);
-	System.out.println("Nascimento do Animal" + nascimento);
+	System.out.println("Especie do Animal" + getEspecie());
+	System.out.println("Sexo do Animal" + getSexo());
+	System.out.println("Nascimento do Animal" + getNascimento());
 	System.out.println("esse animal aerio concegui voar até" + altitude);
 
 }
